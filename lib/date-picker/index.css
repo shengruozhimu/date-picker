@@ -1,0 +1,80 @@
+.hide{
+    display: none;
+}
+.datepicker-dailog-pannel{
+    border:1px solid #000;
+    padding:10px;
+    user-select:none;
+    width: -webkit-fill-available;
+}
+.datepicker-dailog-show{
+    width:100%;
+    height: 35px;
+    line-height: 35px;
+    border: 1px solid #000;
+    margin-bottom: 10px;
+    text-indent: 15px;
+}
+.datepicker-dailog-show:focus{
+    outline: none;
+}
+.datepicker-dailog-pannel>.heading{
+    text-align:center;
+    line-height: 80px;
+    font-size : 18px;
+}
+.datepicker-dailog-pannel>.heading>.pre{
+    display:inline;
+    margin-right:20px;
+}
+.datepicker-dailog-pannel>.heading>.next{
+    display:inline;
+    margin-left:20px;
+}
+.datepicker-dailog-pannel>.heading>.title{
+    display:inline;
+}
+.datepicker-dailog-pannel> .weeks{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+}
+.datepicker-dailog-pannel> .weeks > .week{
+    text-align :center;
+}
+.datepicker-dailog-pannel > .days{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    text-align: center;
+    line-height: 80px; 
+}
+.datepicker-dailog-pannel > .days > .current-month{
+    opacity:100;
+}
+
+.datepicker-dailog-pannel > .days > .not-current-month{
+    opacity:0.5;
+}
+.datepicker-dailog-pannel > .days > .day:focus{
+    outline: none;
+}
+.datepicker-dailog-pannel > .btn-group{
+    margin-top:5px;
+    text-align: center;
+}
+.datepicker-dailog-pannel > .btn-group > div{
+    height: 40px;
+    line-height: 40px;
+    padding: 0 25px;
+    border: 1px solid #000;
+    display: inline-block;
+    cursor: pointer;
+}
+.datepicker-dailog-pannel > .btn-group > div + div{
+    margin-left: 10px;
+}
+.active{
+    color: white;
+    font-size: 18px;
+    font-weight: 800;
+    background-color: green;
+}
